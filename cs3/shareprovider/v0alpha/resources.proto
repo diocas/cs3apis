@@ -49,19 +49,6 @@ message ProviderInfo {
   // offered by the storage provider. Meant to be read
   // by humans.
   string description = 4;
-  // Represents the list of methods available 
-  // on this storage provider.
-  message Methods {
-    bool create_share = 1;
-    bool remove_share = 2;
-    bool update_share = 3;
-    bool list_shares = 4;
-    bool update_received_share = 5;
-    bool list_received_shares = 6;
-  }
-  // REQUIRED.
-  // List of available methods.
-  Methods available_methods = 5;
 }
 
 // Shares are relationships between a resource owner 
